@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Eduit</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#courses">Cursos</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="home">
+        <h2>Bem-vindo à Educação Interativa</h2>
+        <p>Plataforma para aprendizado dinâmico e interativo.</p>
+    </section>
+
+    <section id="courses">
+        <h2>Cursos Disponíveis</h2>
+        <div class="course">
+            <h3>Curso de Matemática</h3>
+            <button onclick="showDetails('matematica')">Detalhes</button>
+        </div>
+        <div class="course">
+            <h3>Curso de História</h3>
+            <button onclick="showDetails('historia')">Detalhes</button>
+        </div>
+        <div class="course">
+            <h3>Curso de Ciências</h3>
+            <button onclick="showDetails('ciencias')">Detalhes</button>
+        </div>
+        <div id="course-details"></div>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Nosso compromisso é proporcionar uma educação de excelência, elevando o aprendizado a um novo patamar por meio de métodos interativos e envolventes. Ao integrar práticas inovadoras ao processo educativo, buscamos despertar o interesse e a curiosidade dos alunos, tornando cada experiência única e transformadora. Acreditamos que a interação é a chave para um aprendizado significativo e duradouro, onde cada pessoa pode explorar seu potencial ao máximo. Venha conosco nessa jornada rumo ao conhecimento de forma dinâmica e estimulante!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu Email" required>
+            <textarea placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>2024 Eduit</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
